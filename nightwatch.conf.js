@@ -74,7 +74,7 @@ module.exports = {
      },
     //path: '/',
     cli_args : {
-      //"webdriver.chrome.driver" : './bin/chromedriver' 
+      "webdriver.chrome.driver" : './bin/chromedriver' 
       "webdriver.gecko.driver" : './bin/geckodriver',
       
     }    
@@ -95,7 +95,7 @@ module.exports = {
       },
 
       desiredCapabilities: {
-        browserName : 'firefox'
+        browserName : 'chrome'
       },
 
       webdriver: {
