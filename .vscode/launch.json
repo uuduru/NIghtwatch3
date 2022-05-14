@@ -12,7 +12,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/node_modules/@cucumber/cucumber/bin/cucumber-js"
+            "program": "/var/jenkins_home/workspace/Nightwatch/node_modules/@cucumber/cucumber/bin/cucumber-js"
         }
     ]
 }
