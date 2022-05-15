@@ -94,7 +94,7 @@ module.exports = {
       },
 
       desiredCapabilities: {
-         browserName : 'MicrosoftEdge',
+         browserName : 'chrome',
         'ms:edgeOptions' : {
           w3c: true,
           // More info on EdgeDriver: https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/capabilities-edge-options
