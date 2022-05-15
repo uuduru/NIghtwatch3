@@ -95,7 +95,9 @@ module.exports = {
       },
 
       desiredCapabilities: {
-        browserName : 'chrome'
+        browserName : 'chrome',
+        browserVersion : '101.0',
+        platformName : 'Linux'
       },
 
       webdriver: {
