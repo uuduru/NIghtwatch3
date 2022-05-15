@@ -6,7 +6,9 @@ Given('Que le navigateur est ouvert, je cherche URL de WAP', function () {
   });
 
   Given('Je rentre le {string} et son mot de passe', function (string) {
+
     return browser.sendKeys("#email",string).sendKeys('#password','root1234');
+
   });
 
   Then('Je clique sur le bouton sign in', function () {
