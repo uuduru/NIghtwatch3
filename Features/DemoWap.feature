@@ -7,6 +7,6 @@ Feature: Se connecter a WAP
     And Je verifie que je suis sur le site 
 
     Examples:
-			| nom_utilisateur 							   |
+			| nom_utilisateur 				  |
 			| "fake_people_manager@yopmail.com"|
 			| "fake.user@yopmail.com"				   |
