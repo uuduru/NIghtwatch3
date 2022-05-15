@@ -69,7 +69,6 @@ module.exports = {
      //port: 80,
      /* desiredCapabilities: {
       browserName: 'chrome',
-      browserVersion :"101.0",
       platformName:"Linux"
      },*/
     //path: '/',
