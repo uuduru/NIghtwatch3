@@ -94,13 +94,13 @@ module.exports = {
       },
 
       desiredCapabilities: {
-         browserName : 'chrome'
+         browserName : 'MicrosoftEdge'
       },
       
       webdriver: {
         start_process: true,
         server_path: '',
-       // server_path: 'node_modules/EdgeDriver/msedgedriver'
+       server_path: 'node_modules/EdgeDriver/msedgedriver'
       }
     },
 
