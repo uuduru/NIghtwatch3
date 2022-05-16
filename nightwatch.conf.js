@@ -94,7 +94,7 @@ module.exports = {
       },
 
       desiredCapabilities: {
-         browserName : firefox'
+         browserName : 'firefox'
       },
       
       webdriver: {
