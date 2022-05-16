@@ -73,7 +73,7 @@ module.exports = {
      },*/
     //path: '/',
     cli_args : {
-      "webdriver.chrome.driver" : './bin/chromedriver', 
+      "webdriver.chrome.driver" : "node_modules/.bin/chromedriver.cmd, 
       //"webdriver.gecko.driver" : './bin/geckodriver',
       
     }    
