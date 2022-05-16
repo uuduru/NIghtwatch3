@@ -108,7 +108,7 @@ module.exports = {
 
     firefox: {
       desiredCapabilities : {
-        browserName : 'firefox',
+        browserName : 'chrome',
         alwaysMatch: {
           acceptInsecureCerts: true,
           'moz:firefoxOptions': {
