@@ -94,7 +94,7 @@ module.exports = {
       },
 
       desiredCapabilities: {
-         browserName : 'firefox'
+         browserName : 'chrome'
       },
       
       webdriver: {
@@ -108,7 +108,7 @@ module.exports = {
 
     firefox: {
       desiredCapabilities : {
-        browserName : 'chrome',
+        browserName : 'firefox',
         alwaysMatch: {
           acceptInsecureCerts: true,
           'moz:firefoxOptions': {
