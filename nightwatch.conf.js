@@ -94,14 +94,7 @@ module.exports = {
       },
 
       desiredCapabilities: {
-         browserName : 'chrome',
-        'goog:chromeOptions' : {
-          w3c: true,
-          args: [
-            '--headless',
-            '--no-sandbox'
-          ]
-        }
+         browserName : firefox'
       },
       
       webdriver: {
