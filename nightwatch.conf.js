@@ -101,6 +101,9 @@ module.exports = {
         start_process: true,
         //server_path: '',
        //server_path: 'node_modules/EdgeDriver/msedgedriver'
+       cli_args: [
+          '--port=30723'
+        ]
       }
     },
 
