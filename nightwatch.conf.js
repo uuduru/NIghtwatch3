@@ -106,6 +106,11 @@ webdriver: {
       },
       
       webdriver: {
+        start_process: true,
+        server_path: ''
+      }
+      
+      /*webdriver: {
         port: 30723,
         start_process: true,
         //server_path: '',
@@ -114,7 +119,7 @@ webdriver: {
        cli_args: [
           '--port=30723'
         ]
-      }
+      }*/
     },
 
     
