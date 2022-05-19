@@ -101,6 +101,7 @@ module.exports = {
         start_process: true,
         //server_path: '',
        //server_path: 'node_modules/EdgeDriver/msedgedriver'
+        server_path: 'node_modules/chromedriver/lib/chromedriver/chromedriver',
        cli_args: [
           '--port=30723'
         ]
