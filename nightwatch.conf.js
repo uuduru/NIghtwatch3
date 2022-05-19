@@ -59,28 +59,36 @@ module.exports = {
   // See https://nightwatchjs.org/guide/#external-globals
   globals_path : '',
   
-  selenium: {
+  /*selenium: {
     start_process: false,
     useSSL: true,
-    //protocol: 'https:',
-    //host : 'selenium.wap-test-platform-iks-086d0feb796ce72f6b820703a879a158-0000.eu-de.containers.appdomain.cloud',
+    //protocol: 'https',
+    //host: 'selenium.wap-test-platform-iks-086d0feb796ce72f6b820703a879a158-0000.eu-de.containers.appdomain.cloud',
      host : '159.122.175.120',
      port: 30723, 
-     //port: 80,
-     /* desiredCapabilities: {
+     //port: 5555,
+      desiredCapabilities: {
       browserName: 'chrome',
       platformName:"Linux"
-     },*/
-    //path: '/',
+     },
+    //path: '/ui',
     cli_args : {
-      "webdriver.chrome.driver" : "node_modules/.bin/chromedriver", 
-      //"webdriver.gecko.driver" : './bin/geckodriver',
+      "webdriver.chrome.driver" : './bin/chromedriver', 
+      "webdriver.gecko.driver" : './bin/geckodriver',
       
     }    
+},*/
+
+webdriver: {
+  server_path: "node_modules/.bin/chromedriver",
+  cli_args: [
+    "--verbose"
+  ],
+  host : '159.122.175.120',
+  port: 30723
 },
 
-  
-  webdriver: {},
+  //webdriver: {},
 
   test_settings: {
     default: {
