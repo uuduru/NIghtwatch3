@@ -62,25 +62,22 @@ module.exports = {
   selenium: {
     start_process: false,
     useSSL: true,
-    //protocol: 'https:',
-    //host : 'selenium.wap-test-platform-iks-086d0feb796ce72f6b820703a879a158-0000.eu-de.containers.appdomain.cloud',
+    //protocol: 'https',
+    //host: 'selenium.wap-test-platform-iks-086d0feb796ce72f6b820703a879a158-0000.eu-de.containers.appdomain.cloud',
      host : '159.122.175.120',
      port: 30723, 
-     //port: 80,
-     /* desiredCapabilities: {
+     //"server_path" : "./bin/selenium-server-standalone-3.{VERSION}.jar",
+      desiredCapabilities: {
       browserName: 'chrome',
       platformName:"Linux"
-     },*/
-    //path: '/',
+     },
     cli_args : {
       "webdriver.chrome.driver" : './bin/chromedriver', 
-      //"webdriver.gecko.driver" : './bin/geckodriver',
-      
+      "webdriver.gecko.driver" : './bin/geckodriver',  
     }    
 },
 
-  
-  webdriver: {},
+  //webdriver: {},
 
   test_settings: {
     default: {
@@ -93,18 +90,22 @@ module.exports = {
         on_failure: true
       },
 
-      desiredCapabilities: {
-        browserName : 'MicrosoftEdge'
+      "desiredCapabilities" : {
+        "browserName" : "chrome",
+        "goog:chromeOptions": {
+          "w3c": true,
+          "args" : ["--no-sandbox"]
+        },
+        "loggingPrefs": {"driver": "INFO", "server": "OFF", "browser": "INFO"}
       },
       
       webdriver: {
-        start_process: true,
-        server_path: 'node_modules/EdgeDriver/msedgedriver.exe'
+        start_process: false,
+        server_path: ''
       }
     },
 
     
-
     firefox: {
       desiredCapabilities : {
         browserName : 'firefox',
@@ -142,6 +143,7 @@ module.exports = {
             //'--allow-insecure-localhost',
             //'--headless'
           ]
+          
         }
       },
 
@@ -161,7 +163,8 @@ module.exports = {
           w3c: true,
           // More info on EdgeDriver: https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/capabilities-edge-options
           args: [
-            //'--headless'
+            '--headless',
+            '--no-sandbox'
           ]
         }
       },
