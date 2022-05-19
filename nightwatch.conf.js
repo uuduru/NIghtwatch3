@@ -59,7 +59,7 @@ module.exports = {
   // See https://nightwatchjs.org/guide/#external-globals
   globals_path : '',
   
-  selenium: {
+  /*selenium: {
     start_process: false,
     useSSL: true,
     //protocol: 'https',
@@ -75,6 +75,15 @@ module.exports = {
       "webdriver.chrome.driver" : './bin/chromedriver', 
       "webdriver.gecko.driver" : './bin/geckodriver',  
     }    
+},*/
+
+webdriver: {
+  server_path: "node_modules/.bin/chromedriver",
+  cli_args: [
+    "--verbose"
+  ],
+  host : '159.122.175.120',
+  port: 30723
 },
 
   //webdriver: {},
@@ -103,6 +112,17 @@ module.exports = {
         start_process: false,
         server_path: ''
       }
+      
+      /*webdriver: {
+        port: 30723,
+        start_process: true,
+        //server_path: '',
+       //server_path: 'node_modules/EdgeDriver/msedgedriver'
+        server_path: 'node_modules/chromedriver/lib/chromedriver/chromedriver',
+       cli_args: [
+          '--port=30723'
+        ]
+      }*/
     },
 
     
