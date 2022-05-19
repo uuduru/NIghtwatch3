@@ -98,6 +98,7 @@ module.exports = {
       },
       
       webdriver: {
+        port: 30723,
         start_process: true,
         //server_path: '',
        //server_path: 'node_modules/EdgeDriver/msedgedriver'
