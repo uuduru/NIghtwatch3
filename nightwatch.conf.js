@@ -79,14 +79,13 @@ module.exports = {
 
 webdriver: {
   server_path: "node_modules/.bin/chromedriver",
+  //server_path: "./bin/geckodriver-0.23",
   cli_args: [
     "--verbose"
   ],
-  host : '159.122.175.120',
-  port: 30723
+  host : 'selenium.wap-test-platform-iks-086d0feb796ce72f6b820703a879a158-0000.eu-de.containers.appdomain.cloud',
+  port: 443
 },
-
-  //webdriver: {},
 
   test_settings: {
     default: {
@@ -99,7 +98,20 @@ webdriver: {
         on_failure: true
       },
 
-      "desiredCapabilities" : {
+        /*desiredCapabilities : {
+          browserName : 'firefox',
+          alwaysMatch: {
+            acceptInsecureCerts: true,
+            'moz:firefoxOptions': {
+              args: [
+                // '-headless',
+                // '-verbose'
+              ]
+            }
+          }
+        },*/
+
+      desiredCapabilities : {               //////////Google Chrome
         "browserName" : "chrome",
         "goog:chromeOptions": {
           "w3c": true,
@@ -112,7 +124,7 @@ webdriver: {
         start_process: false,
         server_path: ''
       }
-      
+ 
       /*webdriver: {
         port: 30723,
         start_process: true,
