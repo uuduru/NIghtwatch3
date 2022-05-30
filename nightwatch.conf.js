@@ -137,7 +137,6 @@ webdriver: {
       }*/
     },
 
-    
     firefox: {
       desiredCapabilities : {
         browserName : 'firefox',
